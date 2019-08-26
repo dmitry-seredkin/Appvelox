@@ -1,0 +1,36 @@
+
+@mixin mq-under-550 {
+  @media (max-width: $screen-small) {
+    @content;
+  }
+}
+
+@mixin mq-under-768 {
+  @media (max-width: $screen-small-medium) {
+    @content;
+  }
+}
+
+@mixin mq-under-1024{
+  @media (max-width: $screen-medium) {
+    @content;
+  }
+}
+
+@mixin mq-under-1280 {
+  @media (max-width: $screen-medium-large) {
+    @content;
+  }
+}
+
+@mixin mq-under-1440 {
+  @media (max-width: $screen-large) {
+    @content;
+  }
+}
+//
+//@mixin mq-under-1720 {
+//  @media (max-width: $screen-enormous) {
+//    @content;
+//  }
+//}
