@@ -3,16 +3,24 @@ $light-green: #8DC33E;
 $green: #76BD01;
 $grey: #979797;
 $black: #1D1C1C;
+$white: #fff;
 
 // color's variables
-$header: white;
-
+$header: $white;
 $line: $grey;
-
 $ask-button: $light-green;
 $ask-button-hover: $green;
-$ask-button-text: white;
+$ask-button-text: $white;
 
+$questions: $white;
+$menu-item: $light-green;
+
+$footer: $white;
+
+
+
+
+// screen sizes
 $screen-small: 550px;
 $screen-small-medium: 768px;
 $screen-medium: 1024px;

@@ -3,8 +3,7 @@
 .header {
   height: 100px;
   background-color: $header;
-
-  font: 14px "Open Sans", sans-serif;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
   display: flex;
   align-items: center;

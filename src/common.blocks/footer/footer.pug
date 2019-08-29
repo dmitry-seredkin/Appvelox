@@ -1,3 +1,23 @@
 
 footer.footer
-    
+    .footer__left-column
+        +navList(20)
+        pre.footer__copyright &copy; 2017, ООО «Международный Психологический Центр»       Конфидициальность
+        p.footer__developer Разработано
+            img.footer__main-logo(src=require("./images/appvelox.png") alt="appvelox")
+
+    .footer__middle-column
+        h5.footer__h5 Мы в соцсетях
+        a(href="https://www.facebook.com")
+            img.footer__icon(src=require('./images/logo/fb-grey.svg') alt="FB")
+        a(href="https://vk.com")
+            img.footer__icon.footer__icon_margin_35(src=require('./images/logo/vk-grey.svg') alt="VK")
+        a(href="https://www.instagram.com/?hl=ru")
+            img.footer__icon(src=require('./images/logo/ig-grey.svg') alt="IG")
+
+    .footer__right-column
+        h5.footer__h5 Мы принимаем
+        .footer__wrap
+            img(src=require('./images/money/ya-dengi.png') alt="яндекс деньги")
+            img.footer__money_margin_12(src=require('./images/money/visa.png') alt="visa")
+            img(src=require('./images/money/mastercard.png') alt="mastercard")

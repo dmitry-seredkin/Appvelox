@@ -1,0 +1,58 @@
+
+.footer {
+  height: 150px;
+  background-color: $footer;
+  box-shadow: 0 -1px 0 0 #DADADA;
+
+  display: flex;
+
+  padding: 47px 0 0 240px;
+}
+
+.footer__copyright {
+  font: 14px "Proxima Nova", sans-serif;
+  letter-spacing: 0.25px;
+  opacity: .6;
+
+  margin: 20px 0 23px;
+}
+
+.footer__developer {
+  font: 14px "Open Sans", sans-serif;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer__main-logo {
+  margin-left: 6px;
+}
+
+.footer__middle-column {
+  margin: 0 80px;
+}
+
+.footer__h5 {
+  font: 14px "Proxima Nova", sans-serif;
+  opacity: 0.6;
+
+  margin-bottom: 11px;
+}
+
+.footer__icon {
+  height: 23px;
+  width: 23px;
+}
+
+.footer__icon_margin_35 {
+  margin: 0 35px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.footer__money_margin_12 {
+  margin: 0 12px;
+}

@@ -1,0 +1,8 @@
+
+-var items = 'Все; Кризис; Семья; Дети; Коммуникация; Мужчина; Женщина; Развитие'.split('; ');
+
+nav.menu
+    each item in items
+        label
+            input.menu__old-mark(type="radio" name="questions")
+            span.menu__text #{item}

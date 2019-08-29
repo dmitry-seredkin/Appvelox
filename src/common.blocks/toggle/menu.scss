@@ -1,0 +1,33 @@
+
+.menu {
+  font: 14px "Open Sans", sans-serif;
+  letter-spacing: 0.25px;
+  color: #1D1C1C;
+  text-align: center;
+
+  user-select: none;
+}
+
+.menu__old-mark {
+  display: none;
+
+  &:checked + .menu__text {
+    background-color: $menu-item;
+    border-radius: 100px;
+    border: 1px solid #C2C3C6;
+
+    color: $white;
+  }
+}
+
+.menu__text {
+  height: 35px;
+
+  line-height: 32px;
+
+  display: inline-block;
+
+  padding: 0 15px;
+  margin: 0 3px;
+  cursor: pointer;
+}
