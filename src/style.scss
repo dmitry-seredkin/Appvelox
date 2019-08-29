@@ -1,0 +1,12 @@
+@import "helpers/reset";
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "common.blocks/navList/navList";
+
+@import "common.blocks/header/header";
+
+
+body {
+  background-color: grey;
+}

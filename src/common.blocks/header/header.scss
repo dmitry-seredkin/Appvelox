@@ -1,0 +1,49 @@
+@import "__whom/header__whom";
+
+.header {
+  height: 100px;
+  background-color: $header;
+
+  font: 14px "Open Sans", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 50px;
+}
+
+.header__left-column {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  max-height: 40px;
+}
+
+.header__wrap {
+  display: flex;
+}
+
+.header__right-column {
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  height: 50px;
+  width: 180px;
+  background-color: $ask-button;
+  border-radius: 4px;
+
+  font: bold 15px Roboto, sans-serif;
+  letter-spacing: 0.2px;
+  color: $ask-button-text;
+
+  margin-left: 40px;
+
+  &:hover {
+    background-color: $ask-button-hover;
+  }
+}

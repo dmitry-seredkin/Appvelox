@@ -1,0 +1,15 @@
+mixin navList(margin)
+
+    -
+        var items = 'Услуги; О нас; Блог; Вопросы; Контакты'.split('; ');
+        var href = 'services; about; blog; questions; contacts'.split('; ');
+        var itemClass = 'list__item';
+        itemClass += margin ? ` list__item_margin-right_${margin}` : ''
+
+    nav
+        ul.list
+            -for (var i = 0; i < 5; i++)
+                -if (i === 4)
+                    -itemClass = 'list__item'
+                li(class= itemClass)
+                    a.list__anchor(href=`${href[i]}.html`)= items[i]

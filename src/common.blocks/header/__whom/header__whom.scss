@@ -1,0 +1,19 @@
+
+.header__whom {
+  display: flex;
+  align-items: center;
+
+  margin-left: 40px;
+}
+
+.header__line {
+  height: 14px;
+  border-left: 1px solid $line;
+
+  margin: 0 19px;
+}
+
+.header__business {
+  font-family: Roboto, sans-serif;
+  color: $line;
+}
