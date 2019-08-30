@@ -15,11 +15,16 @@
 @import "common.blocks/questions/questions";
 @import "common.blocks/toggle/menu";
 @import "common.blocks/questionsList/questions-list";
+@import "common.blocks/modal/modal";
 
 @import "common.blocks/footer/footer";
 
-
-
 body {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.app {
+  max-width: 1440px;
+
+  margin: auto;
 }

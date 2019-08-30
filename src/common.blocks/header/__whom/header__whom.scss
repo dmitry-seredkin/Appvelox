@@ -3,6 +3,10 @@
   font: 14px "Open Sans", sans-serif;
 
   margin-left: 40px;
+
+  @include mq-under-1280 {
+    display: none;
+  }
 }
 
 .header__line {

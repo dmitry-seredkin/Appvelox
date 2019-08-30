@@ -10,6 +10,10 @@
   justify-content: space-between;
 
   padding: 0 50px;
+
+  @include mq-under-1024 {
+    padding: 0 30px;
+  }
 }
 
 .header__left-column {

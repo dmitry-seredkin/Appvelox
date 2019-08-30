@@ -5,8 +5,21 @@
   box-shadow: 0 -1px 0 0 #DADADA;
 
   display: flex;
+  flex-flow: column wrap;
 
   padding: 47px 0 0 240px;
+
+  @include mq-under-1280 {
+    padding: 47px 0 0 100px;
+  }
+
+  @include mq-under-1024 {
+    height: auto;
+
+    align-items: center;
+
+    padding: 30px 0;
+  }
 }
 
 .footer__copyright {
@@ -15,6 +28,12 @@
   opacity: .6;
 
   margin: 20px 0 23px;
+
+  @include mq-under-1024 {
+    order: 2;
+
+    margin: 0;
+  }
 }
 
 .footer__developer {
@@ -22,6 +41,12 @@
 
   display: flex;
   align-items: center;
+
+  @include mq-under-1024 {
+    order: 1;
+
+    margin: 34px 0 25px;
+  }
 }
 
 .footer__main-logo {
@@ -29,7 +54,9 @@
 }
 
 .footer__middle-column {
-  margin: 0 80px;
+  @include mq-under-1024 {
+    margin: 41px 0 32px;
+  }
 }
 
 .footer__h5 {
@@ -37,6 +64,10 @@
   opacity: 0.6;
 
   margin-bottom: 11px;
+
+  @include mq-under-1024 {
+    display: none;
+  }
 }
 
 .footer__icon {
