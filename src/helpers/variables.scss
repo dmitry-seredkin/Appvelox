@@ -13,7 +13,7 @@ $ask-button-hover: $green;
 $ask-button-text: $white;
 
 $questions: $white;
-$menu-item: $light-green;
+$toggle-item: $light-green;
 
 $footer: $white;
 
@@ -21,8 +21,9 @@ $footer: $white;
 
 
 // screen sizes
-$screen-small: 550px;
-$screen-small-medium: 768px;
+$screen-small: 600px;
+//$screen-small-medium: 768px;
+$screen-small-medium: 880px;
 $screen-medium: 1024px;
 $screen-medium-large: 1280px;
 $screen-large: 1440px;

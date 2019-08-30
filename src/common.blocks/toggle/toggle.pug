@@ -1,8 +1,8 @@
 
 -var items = 'Все; Кризис; Семья; Дети; Коммуникация; Мужчина; Женщина; Развитие'.split('; ');
 
-nav.menu
+nav.toggle
     each item in items
         label
-            input.menu__old-mark(type="radio" name="questions")
-            span.menu__text #{item}
+            input.toggle__old-mark(type="radio" name="questions")
+            span.toggle__text #{item}

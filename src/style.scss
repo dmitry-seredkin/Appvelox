@@ -13,8 +13,8 @@
 @import "common.blocks/header/header";
 
 @import "common.blocks/questions/questions";
-@import "common.blocks/toggle/menu";
-@import "common.blocks/questionsList/questions-list";
+@import "common.blocks/toggle/toggle";
+@import "common.blocks/questions-list/questions-list";
 @import "common.blocks/modal/modal";
 
 @import "common.blocks/footer/footer";
@@ -25,6 +25,7 @@ body {
 
 .app {
   max-width: 1440px;
+  min-width: 320px;
 
   margin: auto;
 }

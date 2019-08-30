@@ -30,8 +30,8 @@
   margin: 20px 0 23px;
 
   @include mq-under-1024 {
+    text-align: center;
     order: 2;
-
     margin: 0;
   }
 }
@@ -44,7 +44,6 @@
 
   @include mq-under-1024 {
     order: 1;
-
     margin: 34px 0 25px;
   }
 }
@@ -55,7 +54,7 @@
 
 .footer__middle-column {
   @include mq-under-1024 {
-    margin: 41px 0 32px;
+    margin: 41px 0 27px;
   }
 }
 

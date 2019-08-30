@@ -1,6 +1,10 @@
 
 .questions-list__item {
   margin-bottom: 15px;
+
+  @include mq-under-600 {
+    margin-bottom: 10px;
+  }
 }
 
 .questions-list__question {
@@ -9,12 +13,17 @@
 
   font: 16px Roboto, sans-serif;
   letter-spacing: 0.36px;
+  line-height: 19px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 0 30px 0 35px;
+
+  @include mq-under-600 {
+    padding: 0 20px;
+  }
 }
 
 .questions-list__arrow {
@@ -44,10 +53,21 @@
 
   padding: 0 40px 0 35px;
   transition: max-height 1s ease-out, padding 1s ease-out;
+
+  @include mq-under-600 {
+    font: 14px "Proxima Nova", sans-serif;
+    line-height: 17px;
+
+    padding: 0 20px;
+  }
 }
 
 .questions-list__answer_active {
-    max-height: 1000px;
+  max-height: 1000px;
 
-    padding: 23px 40px 27px 35px;
+  padding: 23px 40px 27px 35px;
+
+  @include mq-under-600 {
+    padding: 24px 20px;
+  }
 }

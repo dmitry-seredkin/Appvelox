@@ -1,33 +1,43 @@
 
-.menu {
+.toggle {
   font: 14px "Open Sans", sans-serif;
   letter-spacing: 0.25px;
+  line-height: 30px;
   color: #1D1C1C;
   text-align: center;
 
   user-select: none;
+
+  @include mq-under-600 {
+    font-family: Roboto, sans-serif;
+  }
 }
 
-.menu__old-mark {
+.toggle__old-mark {
   display: none;
 
-  &:checked + .menu__text {
-    background-color: $menu-item;
+  &:checked + .toggle__text {
+    background-color: $toggle-item;
     border-radius: 100px;
     border: 1px solid #C2C3C6;
 
     color: $white;
+
+    @include mq-under-600 {
+      border: none;
+    }
   }
 }
 
-.menu__text {
-  height: 35px;
-
-  line-height: 32px;
-
+.toggle__text {
+  //height: 35px;
   display: inline-block;
 
   padding: 0 15px;
   margin: 0 3px;
   cursor: pointer;
+
+  @include mq-under-600 {
+
+  }
 }

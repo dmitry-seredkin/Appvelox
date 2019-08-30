@@ -5,6 +5,12 @@
 
 .list__item {
   display: inline-block;
+
+  @include mq-under-600 {
+    text-align: center;
+
+    display: block;
+  }
 }
 
 .list__item_margin-right_29 {
@@ -13,6 +19,10 @@
 
 .list__item_margin-right_20 {
   margin-right: 20px;
+
+  @include mq-under-600 {
+    margin: 0 0 15px;
+  }
 }
 
 .list__anchor {

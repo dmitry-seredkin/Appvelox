@@ -14,6 +14,11 @@
   @include mq-under-1024 {
     padding: 0 30px;
   }
+
+  @include mq-under-600 {
+    height: 70px;
+    padding: 0 20px;
+  }
 }
 
 .header__left-column {
@@ -23,6 +28,10 @@
 
 .header__logo {
   max-height: 40px;
+
+  @include mq-under-600 {
+    max-width: 157px;
+  }
 }
 
 .header__wrap {
@@ -32,6 +41,10 @@
 .header__right-column {
   display: flex;
   align-items: center;
+
+  @include mq-under-880 {
+    display: none;
+  }
 }
 
 .header__button {

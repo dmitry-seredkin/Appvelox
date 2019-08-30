@@ -1,11 +1,17 @@
 
-@mixin mq-under-550 {
+@mixin mq-under-600 {
   @media (max-width: $screen-small) {
     @content;
   }
 }
 
-@mixin mq-under-768 {
+//@mixin mq-under-768 {
+//  @media (max-width: $screen-small-medium) {
+//    @content;
+//  }
+//}
+
+@mixin mq-under-880 {
   @media (max-width: $screen-small-medium) {
     @content;
   }

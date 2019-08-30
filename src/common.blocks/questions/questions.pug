@@ -3,10 +3,10 @@ main.questions
     h1.questions__h1 Часто задаваемые вопросы
     p.questions__comment В этом разделе мы собрали самые часто задаваемые вопросы
 
-    include ../toggle/toggle
+    .questions__nav
+        include ../toggle/toggle
 
-    ul.questions__body
-        include ../questionsList/questions-list
+    include ../questions-list/questions-list
 
     p.questions__extra
         | Если вы не нашли нужную информацию, то задайте свой вопрос

@@ -11,23 +11,46 @@
   @include mq-under-1024 {
     padding: 50px 80px;
   }
+
+  @include mq-under-600 {
+    padding: 20px 0 23px;
+  }
 }
 
 .questions__h1 {
   font: 300 25px Roboto, sans-serif;
   text-align: center;
+
+  @include mq-under-600 {
+    max-width: 223px;
+
+    font-size: 18px;
+
+    margin: auto;
+  }
 }
 
 .questions__comment {
   font: 300 16px Roboto, sans-serif;
   text-align: center;
+  line-height: 30px;
 
   margin: 31px 0 41px;
+
+  @include mq-under-600 {
+    font: 14px "Proxima Nova", sans-serif;
+    line-height: 22px;
+
+    margin: 35px 0 26px;
+  }
 }
 
-.questions__body {
-  min-height: 50vh;
-  margin: 39px 0 32px;
+.questions__nav {
+  margin-bottom: 39px;
+
+  @include mq-under-600 {
+    margin-bottom: 30px;
+  }
 }
 
 .questions__extra {
@@ -39,6 +62,10 @@
   text-align: center;
 
   margin: auto;
+
+  @include mq-under-600 {
+    display: none;
+  }
 }
 
 .questions__ask {
@@ -50,4 +77,5 @@
 .questions__number {
   font-weight: 700;
   color: black;
+  white-space:  nowrap;
 }
