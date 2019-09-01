@@ -9,12 +9,13 @@ html
         meta(name="description" content="Appvelox test layout")
         meta(name="keywords" content="Layout, appvelox, test")
         meta(name="author" content="Dimitry Seredkin")
-        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet")
         link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet")
         link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.main.css}`)
     body
         .app
-            include common.blocks/header/header
-            include common.blocks/questions/questions
-            include common.blocks/footer/footer
+            //include common.blocks/header/header
+            //include common.blocks/questions/questions
+            //include common.blocks/footer/footer
+            include common.blocks/main/main
         script(src=`${htmlWebpackPlugin.files.chunks.main.entry}`)

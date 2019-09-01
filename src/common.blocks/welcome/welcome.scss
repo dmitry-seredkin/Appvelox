@@ -1,0 +1,45 @@
+
+.welcome {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding: 89px 0 50px;
+}
+
+.welcome__head {
+  max-width: 600px;
+
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+}
+
+.welcome__comment {
+  max-width: 650px;
+  opacity: 0.9;
+
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #64697A;
+
+  margin: 16px 0 69px;
+}
+
+.welcome__button {
+  height: 50px;
+  width: 180px;
+  background-color: $light-green;
+
+  font: 300 15px "Open Sans", sans-serif;
+  line-height: 50px;
+  text-align: center;
+  color: $white;
+
+  display: inline-block;
+
+  &:hover {
+    background-color: $green;
+  }
+}

@@ -9,14 +9,19 @@
 // pug mixins
 @import "common.blocks/navList/navList";
 
-// blocks
+// header
 @import "common.blocks/header/header";
 
+// main
+@import "common.blocks/main/main";
+
+// questions
 @import "common.blocks/questions/questions";
 @import "common.blocks/toggle/toggle";
 @import "common.blocks/questions-list/questions-list";
 @import "common.blocks/modal/modal";
 
+// footer
 @import "common.blocks/footer/footer";
 
 body {
@@ -26,6 +31,7 @@ body {
 .app {
   max-width: 1440px;
   min-width: 320px;
+  background-color: white;
 
   margin: auto;
 }
