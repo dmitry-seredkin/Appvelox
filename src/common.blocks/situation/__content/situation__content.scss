@@ -1,0 +1,44 @@
+
+.situation__content {
+  visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  padding: 69px 240px;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.situation__content_visible {
+  visibility: visible;
+}
+
+.situation__img {
+  height: 149px;
+  width: 162px;
+
+  float: left;
+  margin-right: 67px;
+}
+
+.situation__sub-head {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.33px;
+  line-height: 32px;
+
+  margin-bottom: 20px;
+}
+
+.situation__text {
+  opacity: .5;
+  font-size: 15px;
+  line-height: 31px;
+  white-space: pre-wrap;
+}
