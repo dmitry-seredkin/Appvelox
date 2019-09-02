@@ -1,0 +1,39 @@
+
+.blog__item {
+  display: inline-block;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.blog__item_margin-right_30 {
+  margin-right: 30px;
+}
+
+.blog__img {
+  height: 128px;
+  width: 180px;
+
+  float: left;
+
+  margin-right: 15px;
+}
+
+.blog__sub-head {
+  font-size: 15px;
+  line-height: 18px;
+
+  margin-bottom: 13px;
+}
+
+.blog__text {
+  max-width: 465px;
+
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+}
+

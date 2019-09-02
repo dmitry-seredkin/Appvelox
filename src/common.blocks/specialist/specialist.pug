@@ -1,0 +1,8 @@
+
+mixin specialist(options)
+
+    .specialist
+        img.specialist__img(src=require(`./images/specialist/spec${options.src}.png`) alt=`${options.name}`)
+        p.specialist__specialty= options.specialty
+        h4.specialist__name= options.name
+        p.specialist__info= options.info

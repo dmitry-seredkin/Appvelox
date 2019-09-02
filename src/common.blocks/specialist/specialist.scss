@@ -1,0 +1,33 @@
+
+.specialist {
+  text-align: center;
+}
+
+.specialist__img {
+  width: 150px;
+  border-radius: 50%;
+
+  margin-bottom: 17px;
+}
+
+.specialist__specialty {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: $black;
+}
+
+.specialist__name {
+  font-size: 20px;
+  line-height: 32px;
+
+  margin: 10px 0;
+}
+
+.specialist__info {
+  font-size: 14px;
+  line-height: 28px;
+  color: $black;
+  white-space: pre-line;
+
+}

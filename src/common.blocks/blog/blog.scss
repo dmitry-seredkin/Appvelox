@@ -1,0 +1,23 @@
+
+@import "__item/blog__item";
+
+.blog {
+  padding: 60px 240px 55px;
+}
+
+.blog__anchor {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+
+  float: right;
+}
+
+.blog__head {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+
+  margin-bottom: 40px;
+}
+
