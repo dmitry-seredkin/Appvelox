@@ -1,0 +1,36 @@
+
+.work__content {
+  margin-bottom: 60px;
+
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+.work__sub-head {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+
+  margin-bottom: 18px;
+}
+
+.work__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.work__img {
+  height: 240px;
+  width: 400px;
+
+  float: left;
+  margin-right: 40px;
+}
+
+.work__img_float_right {
+  float: right;
+  margin-left: 40px;
+}
