@@ -14,8 +14,8 @@ html
         link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.main.css}`)
     body
         .app
-            //include common.blocks/header/header
+            include common.blocks/header/header
+            //include common.blocks/main/main
             //include common.blocks/questions/questions
-            //include common.blocks/footer/footer
-            include common.blocks/main/main
+            include common.blocks/footer/footer
         script(src=`${htmlWebpackPlugin.files.chunks.main.entry}`)

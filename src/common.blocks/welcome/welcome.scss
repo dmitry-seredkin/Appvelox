@@ -1,8 +1,8 @@
 
 .welcome {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  background-color: #fefefe;
+
+  text-align: center;
 
   padding: 89px 0 50px;
 }
@@ -13,6 +13,8 @@
   font-size: 35px;
   line-height: 41px;
   text-align: center;
+
+  margin: auto;
 }
 
 .welcome__comment {
@@ -24,7 +26,7 @@
   text-align: center;
   color: #64697A;
 
-  margin: 16px 0 69px;
+  margin: 16px auto 69px;
 }
 
 .welcome__button {

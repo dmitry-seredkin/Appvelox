@@ -6,6 +6,6 @@ mixin situation__content(options)
         itemClass += options.visible ? ' situation__content_visible' : ''
 
     li(class=itemClass)
-        img.situation__img(src=require(`./images/situation/${options.src}.png`) alt="Семья")
+        img.situation__img(src=require(`./images/situation/${options.src}.png`) alt=`${options.head}`)
         h3.situation__sub-head= options.head
         p.situation__text= options.text

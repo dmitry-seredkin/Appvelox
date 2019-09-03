@@ -1,12 +1,6 @@
 
 .situation__content {
-  visibility: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  padding: 69px 240px;
+  display: none;
 
   &:after {
     content: '';
@@ -16,7 +10,7 @@
 }
 
 .situation__content_visible {
-  visibility: visible;
+  display: block;
 }
 
 .situation__img {
@@ -40,5 +34,5 @@
   opacity: .5;
   font-size: 15px;
   line-height: 31px;
-  white-space: pre-wrap;
+  //white-space: pre-wrap;
 }

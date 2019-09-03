@@ -2,7 +2,10 @@
 @import "../specialist/specialist";
 
 .crew {
-  padding: 60px 40px 40px;
+  box-shadow: 0 1px 0 0 rgba(199,199,199,0.5);
+  position: relative;
+
+  padding: 60px 240px 40px;
 }
 
 .crew__head {
@@ -19,6 +22,44 @@
 
   position: relative;
   overflow: hidden;
+}
+
+.crew__wrap {
+  width: calc(100% * 5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  transition: left 1s;
+}
+
+.crew__item {
+  width: calc(100% / 5);
+  display: inline-block;
+}
+
+.crew__indicator {
+  text-align: center;
+
+  margin-top: 30px;
+}
+
+.crew__circle {
+  height: 10px;
+  width: 10px;
+  background-color: #E4E4E4;
+  border-radius: 50%;
+
+  display: inline-block;
+}
+
+.crew__circle_active {
+  background-color: #A3A3A3;
+}
+
+.crew__circle_margin-left_15 {
+  margin-left: 15px;
 }
 
 .crew__button {
@@ -49,7 +90,7 @@
 }
 
 .crew__button_prev {
-  left: 0;
+  left: 40px;
 
   &:after {
     left: 4px;
@@ -58,46 +99,10 @@
 }
 
 .crew__button_next {
-  right: 0;
+  right: 40px;
 
   &:after {
     right: 5px;
     transform: rotate(135deg);
   }
-}
-
-.crew__wrap {
-  width: calc(100% * 2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  transition: left 1s;
-}
-
-.crew__item {
-  width: calc(100% / 2);
-  display: inline-block;
-}
-
-.crew__indicator {
-
-}
-
-.crew__circle {
-  height: 10px;
-  width: 10px;
-  background-color: #E4E4E4;
-  border-radius: 50%;
-
-  display: inline-block;
-}
-
-.crew__circle_active {
-  background-color: #A3A3A3;
-}
-
-.crew__circle_margin-left_15 {
-  margin-left: 15px;
 }

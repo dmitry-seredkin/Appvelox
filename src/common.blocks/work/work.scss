@@ -2,10 +2,13 @@
 @import "__content/work__content";
 
 .work {
-  padding: 60px 240px 0;
+  box-shadow: 0 1px 4px 0 #EAEAEA;
+
+  padding: 60px 240px;
 }
 
 .work__head {
+
   font-weight: 300;
   font-size: 25px;
   line-height: 29px;

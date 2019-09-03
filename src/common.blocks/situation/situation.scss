@@ -15,6 +15,8 @@
 }
 
 .situation__nav {
+  border-bottom: 1px solid #EAEAEA;
+
   padding: 0 240px;
   margin-bottom: -1px;
 }
@@ -43,26 +45,7 @@
 }
 
 .situation__list {
-  height: 300px;
-  position: relative;
-}
+  padding: 69px 240px;
 
-.situation__slider {
-  height: 320px;
-  border-top: 1px solid #EAEAEA;
-
-  position: relative;
-  overflow: hidden;
-}
-
-.situation__wrap {
-  height: 220px;
-  width: calc(100% * 6);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  transition: left 1s;
+  background: #f9f9f9 linear-gradient(to bottom, #fefefe, #f5f5f5);
 }

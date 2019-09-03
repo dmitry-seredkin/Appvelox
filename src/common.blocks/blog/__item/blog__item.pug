@@ -5,6 +5,7 @@ mixin blog__item(options)
         itemClass += options.src % 2 ? ' blog__item_margin-right_30' : ''
 
     li(class=itemClass)
-        img.blog__img(src=require(`./images/blog/blog${options.src}.png`))
-        h5.blog__sub-head= options.head
-        p.blog__text= options.text
+        a.blog__anchor(href="somewhere.html")
+            img.blog__img(src=require(`./images/blog/blog${options.src}.png`))
+            h5.blog__sub-head= options.head
+            p.blog__text= options.text
