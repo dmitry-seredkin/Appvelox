@@ -2,10 +2,18 @@
 header.header
     .header__left-column
         a(href="")
-            img.header__logo(src=require("./images/logo/logo.png") alt="Logo")
+            img.header__logo(src=require("./images/logo/logo.png") srcset="./images/logo/logo@2x.png 2x" alt="Logo")
 
         include __whom/header__whom
 
     .header__right-column
         +navList(29)
         button.header__button Задать вопрос
+
+
+    .header__menu
+        span.header__text Меню
+        .header__open-button
+            .header__menu-line.header__menu-line_margin-bottom_5
+            .header__menu-line.header__menu-line_margin-bottom_5
+            .header__menu-line

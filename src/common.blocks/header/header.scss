@@ -2,6 +2,7 @@
 
 .header {
   height: 100px;
+  width: 100%;
   background-color: $header;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
@@ -27,10 +28,10 @@
 }
 
 .header__logo {
-  max-height: 40px;
+  height: 40px;
 
   @include mq-under-600 {
-    max-width: 157px;
+    width: 157px;
   }
 }
 
@@ -62,4 +63,33 @@
   &:hover {
     background-color: $ask-button-hover;
   }
+}
+
+.header__menu {
+  display: none;
+
+  @include mq-under-880 {
+    display: block;
+  }
+}
+
+.header__text {
+  font: 14px "Proxima Nova", sans-serif;
+
+  margin-right: 12px;
+}
+
+.header__open-button {
+  display: inline-block;
+}
+
+.header__menu-line {
+  height: 1px;
+  width: 18px;
+  background-color: $black;
+
+}
+
+.header__menu-line_margin-bottom_5 {
+  margin-bottom: 5px;
 }

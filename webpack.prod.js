@@ -2,6 +2,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -9,6 +10,11 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(common, {
     mode: 'production',
+
+    entry: {
+        main: './src/index.js',
+        questions: './src/questions.js'
+    },
 
     optimization: {
         minimize: true,
@@ -20,14 +26,26 @@ module.exports = merge(common, {
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        // filename: 'main.[chunkhash].js'
-        filename: 'main.js'
+        filename: '[name].bundle.js'
     },
 
     plugins: [
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/app.pug',
+            filename: 'index.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/questions.pug',
+            filename: 'questions.html'
+        }),
+
         new MiniCssExtractPlugin({
-            // filename: 'style.[chunkhash].css'
-            filename: 'style.css'
+            filename: '[name].style.css'
         })
 
     ]

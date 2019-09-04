@@ -6,6 +6,6 @@ mixin blog__item(options)
 
     li(class=itemClass)
         a.blog__sub-anchor(href="somewhere.html")
-            img.blog__img(src=require(`./images/blog/blog${options.src}.png`))
+            img.blog__img(src=require(`./images/blog/blog${options.src}.png`) alt="Деньги")
             h5.blog__sub-head= options.head
             p.blog__text= options.text

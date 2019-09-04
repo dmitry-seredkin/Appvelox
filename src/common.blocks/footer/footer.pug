@@ -4,16 +4,18 @@ footer.footer
     +navList(20)
     p.footer__copyright &copy; 2017, ООО «Международный Психологический Центр»    Конфидициальность
     p.footer__developer Разработано
-        img.footer__main-logo(src=require("./images/logo/appvelox.png") alt="appvelox")
+        img.footer__main-logo(src=require("./images/logo/appvelox.png")
+                              srcset="./images/logo/appvelox@2x.png 2x, ./images/logo/appvelox@3x.png 3x"
+                              alt="appvelox")
 
     .footer__middle-column
         h5.footer__h5 Мы в соцсетях
         a(href="https://www.facebook.com")
-            img.footer__icon(src=require('./images/social/fb-grey.svg') alt="FB")
+            img.footer__icon.js-social-icon(src=require('./images/social/fb-grey.svg') alt="FB")
         a(href="https://vk.com")
-            img.footer__icon.footer__icon_margin_35(src=require('./images/social/vk-grey.svg') alt="VK")
+            img.footer__icon.footer__icon_margin_35.js-social-icon(src=require('./images/social/vk-grey.svg') alt="VK")
         a(href="https://www.instagram.com/?hl=ru")
-            img.footer__icon(src=require('./images/social/ig-grey.svg') alt="IG")
+            img.footer__icon.js-social-icon(src=require('./images/social/ig-grey.svg') alt="IG")
 
     .footer__right-column
         h5.footer__h5 Мы принимаем

@@ -4,5 +4,8 @@
 nav.toggle
     each item in items
         label
-            input.toggle__old-mark(type="radio" name="questions")
+            -if (item === 'Все')
+                input.toggle__old-mark(type="radio" name="questions" checked)
+            -else
+                input.toggle__old-mark(type="radio" name="questions")
             span.toggle__text #{item}

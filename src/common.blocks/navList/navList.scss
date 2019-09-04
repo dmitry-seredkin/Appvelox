@@ -1,9 +1,10 @@
 
-.list {
+.nav {
   font: 14px "Open Sans", sans-serif;
+  display: inline-block;
 }
 
-.list__item {
+.nav__item {
   display: inline-block;
 
   @include mq-under-600 {
@@ -13,11 +14,11 @@
   }
 }
 
-.list__item_margin-right_29 {
+.nav__item_margin-right_29 {
   margin-right: 29px;
 }
 
-.list__item_margin-right_20 {
+.nav__item_margin-right_20 {
   margin-right: 20px;
 
   @include mq-under-600 {
@@ -25,7 +26,7 @@
   }
 }
 
-.list__anchor {
+.nav__anchor {
   color:  #1D1C1C;
   letter-spacing: 0.4px;
 }

@@ -2,12 +2,8 @@ const path = require('path');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: {
-        main: './src/index.js'
-    },
 
     module: {
         rules: [
@@ -65,12 +61,6 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
 
-        new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './src/app.pug',
-            filename: 'index.html'
-        }),
     ],
 
     resolve: {

@@ -1,6 +1,5 @@
 
 include common.blocks/navList/navList
-include common.blocks/js-slider/js-slider
 
 doctype html(lang="ru")
 html
@@ -13,8 +12,8 @@ html
         meta(name="author" content="Dimitry Seredkin")
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet")
         link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet")
-        link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.main.css}`)
+        link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.questions.css}`)
     body
         .app
-            include common.blocks/main/main
-        script(src=`${htmlWebpackPlugin.files.chunks.main.entry}`)
+            include common.blocks/questions/questions
+        script(src=`${htmlWebpackPlugin.files.chunks.questions.entry}`)

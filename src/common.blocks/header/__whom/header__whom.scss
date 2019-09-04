@@ -2,6 +2,9 @@
 .header__whom {
   font: 14px "Open Sans", sans-serif;
 
+  display: inline-block;
+
+
   margin-left: 40px;
 
   @include mq-under-1280 {

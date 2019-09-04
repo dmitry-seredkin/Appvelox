@@ -1,9 +1,5 @@
 
-function handleClick(event) {
-
-}
-
-export function listClick() {
+export function addQuestionListListener() {
     const questionsList = document.querySelectorAll('.questions-list__item');
     questionsList.forEach((elem) => {
         const answer = elem.querySelector('.questions-list__answer');
