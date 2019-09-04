@@ -1,7 +1,10 @@
 
 import './style.scss';
 
-import { addSituationClickListener } from "./common.blocks/situation/situation";
+import { addSituationNavListener } from "./common.blocks/situation/situation";
+import { addSliderNavListeners } from "./common.blocks/js-slider/js-slider";
+
+
 // import { listenSocial } from "./common.blocks/footer/footer";
 import { listClick } from "./common.blocks/questions-list/questions-list";
 import { addQuestionsAskListener } from "./common.blocks/questions/questions";
@@ -12,7 +15,8 @@ import { addModalCloseButtonListener } from "./common.blocks/modal/modal";
 // addQuestionsAskListener();
 // addModalCloseButtonListener();
 //
-import { addButtonsListeners } from "./common.blocks/crew/crew";
+//
+// addSituationClickListener();
 
-addButtonsListeners();
-addSituationClickListener();
+addSituationNavListener();
+addSliderNavListeners();

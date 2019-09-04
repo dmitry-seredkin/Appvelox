@@ -1,12 +1,18 @@
--var items = 'ESP; MA; MD'.split('; ')
+-
+    var items = 'ESP; MA; MD; MD; ESP'.split('; ')
+    var elemPerPage = 3
+    var pages = Math.ceil(items.length / elemPerPage)
 
 section.company
     h2.company__head Нам доверяют
 
-    .company__slider
-        ul.company__wrap
-            each item in items
-                li.company__item
-                    //img(src=require(`./images/company/${item}.png`) alt="ESP")
-    button.company__button.company__button_prev.company__button_disabled
-    button.company__button.company__button_next
+    .js-slider
+        .company__wrap.js-slider__wrap
+            ul.company__list.js-slider__list(data-pages=pages)
+                each item in items
+                    li.company__item
+                        a(href="company.html")
+                            img(src=require(`./images/company/${item}.png`) alt=`${item}`)
+
+        .company__navigation
+            +sliderNavigation(pages, true)

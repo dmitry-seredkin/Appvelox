@@ -2,6 +2,10 @@
 .blog__item {
   display: inline-block;
 
+  @include mq-under-1280 {
+    display: block;
+  }
+
   &:after {
     content: '';
     display: block;
@@ -11,9 +15,13 @@
 
 .blog__item_margin-right_30 {
   margin-right: 30px;
+
+  @include mq-under-1280 {
+    margin: 0 0 39px;
+  }
 }
 
-.blog__anchor {
+.blog__sub-anchor {
   color: black;
 }
 
@@ -24,6 +32,11 @@
   float: left;
 
   margin-right: 15px;
+
+  @include mq-under-880 {
+    float: none;
+    margin: 0;
+  }
 }
 
 .blog__sub-head {
@@ -31,6 +44,10 @@
   line-height: 18px;
 
   margin-bottom: 13px;
+
+  @include mq-under-880 {
+    margin: 15px 0 14px;
+  }
 }
 
 .blog__text {
@@ -39,5 +56,11 @@
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
+
+  @include mq-under-880 {
+    max-width: 400px;
+
+    margin: auto;
+  }
 }
 

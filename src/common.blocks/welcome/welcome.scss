@@ -5,6 +5,10 @@
   text-align: center;
 
   padding: 89px 0 50px;
+
+  @include mq-under-600 {
+    padding: 30px 10px;
+  }
 }
 
 .welcome__head {
@@ -15,6 +19,11 @@
   text-align: center;
 
   margin: auto;
+
+  @include mq-under-600 {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .welcome__comment {
@@ -27,6 +36,13 @@
   color: #64697A;
 
   margin: 16px auto 69px;
+
+  @include mq-under-600 {
+    font-size: 14px;
+    line-height: 24px;
+
+    margin: 60px 16px 22px;
+  }
 }
 
 .welcome__button {
@@ -43,5 +59,10 @@
 
   &:hover {
     background-color: $green;
+  }
+
+  @include mq-under-600 {
+    font-weight: 400;
+    font-family: "Proxima Nova", sans-serif;
   }
 }

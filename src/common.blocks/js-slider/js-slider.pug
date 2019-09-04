@@ -1,0 +1,16 @@
+mixin sliderNavigation(count, hidden)
+
+    -
+        var nextButtonClass = 'js-slider__button js-slider__button_next'
+        nextButtonClass += count < 2 ? 'js-slider__button_disabled' : ''
+        var indicatorClass = 'js-slider__indicator'
+        indicatorClass += hidden ? ' js-slider__indicator_hidden' : ''
+
+    div(class=indicatorClass)
+        -for (let i = 0; i < count; i++)
+            -if (i === 0)
+                span.js-slider__circle.js-slider__circle_active
+            -else
+                span.js-slider__circle.js-slider__circle_margin-left_15
+    button.js-slider__button.js-slider__button_prev.js-slider__button_disabled
+    button.js-slider__button.js-slider__button_next

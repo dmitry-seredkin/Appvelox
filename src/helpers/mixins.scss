@@ -1,6 +1,6 @@
 
 @mixin mq-under-600 {
-  @media (max-width: $screen-small) {
+  @media (max-width: $screen-small - 1px) {
     @content;
   }
 }
@@ -12,25 +12,25 @@
 //}
 
 @mixin mq-under-880 {
-  @media (max-width: $screen-small-medium) {
+  @media (max-width: $screen-small-medium - 1px) {
     @content;
   }
 }
 
 @mixin mq-under-1024{
-  @media (max-width: $screen-medium) {
+  @media (max-width: $screen-medium - 1px) {
     @content;
   }
 }
 
 @mixin mq-under-1280 {
-  @media (max-width: $screen-medium-large) {
+  @media (max-width: $screen-medium-large - 1px) {
     @content;
   }
 }
 
 @mixin mq-under-1440 {
-  @media (max-width: $screen-large) {
+  @media (max-width: $screen-large - 1px) {
     @content;
   }
 }

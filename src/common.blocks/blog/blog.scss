@@ -3,6 +3,16 @@
 
 .blog {
   padding: 60px 240px 55px;
+
+  @include mq-under-1440 {
+    padding: 60px 160px 55px;
+  }
+
+  @include mq-under-880 {
+    text-align: center;
+
+    padding: 40px 24px 50px;
+  }
 }
 
 .blog__anchor {
@@ -12,6 +22,10 @@
   color: black;
 
   float: right;
+
+  @include mq-under-880 {
+    display: none;
+  }
 }
 
 .blog__head {
@@ -20,5 +34,14 @@
   line-height: 29px;
 
   margin-bottom: 40px;
+
+  @include mq-under-880 {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 27px;
+  }
 }
 
+.blog__list {
+}

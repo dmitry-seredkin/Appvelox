@@ -3,6 +3,10 @@
 
 .situation {
   padding-top: 60px;
+
+  @include mq-under-880 {
+    padding-top: 32px;
+  }
 }
 
 .situation__head {
@@ -12,13 +16,45 @@
   text-align: center;
 
   margin-bottom: 42px;
+
+  @include mq-under-880 {
+    font-size: 18px;
+    letter-spacing: 0.14px;
+    line-height: 22px;
+
+    margin: 0 48px 41px;
+  }
 }
 
 .situation__nav {
   border-bottom: 1px solid #EAEAEA;
+  user-select: none;
 
   padding: 0 240px;
   margin-bottom: -1px;
+
+  @include mq-under-1440 {
+    position: relative;
+    overflow: hidden;
+
+    padding: 37px 0 0;
+  }
+
+  @include mq-under-880 {
+    padding: 36px 0 0;
+  }
+}
+
+.situation__wrap {
+  @include mq-under-1440 {
+    width: 960px;
+    position: absolute;
+    top: 0;
+  }
+
+  @include mq-under-880 {
+    width: 700px;
+  }
 }
 
 .situation__item {
@@ -36,16 +72,37 @@
 
 .situation__item_margin-left_81 {
   margin-left: 81.5px;
+
+  @include mq-under-1024 {
+    margin-left: 50px;
+  }
+
+  @include mq-under-880 {
+    margin-left: 30px;
+  }
 }
 
 .situation__item_active {
-  color: $black;
-
   border-bottom: 3px solid #89C53D;
+
+  color: $black;
 }
 
 .situation__list {
+  background: #f9f9f9 linear-gradient(to bottom, #fefefe, #f5f5f5);
+
   padding: 69px 240px;
 
-  background: #f9f9f9 linear-gradient(to bottom, #fefefe, #f5f5f5);
+  @include mq-under-1280 {
+    padding: 69px 160px;
+  }
+
+  @include mq-under-1024 {
+    padding: 50px 80px;
+  }
+
+  @include mq-under-880 {
+    text-align: center;
+    padding: 29px 33px 33px;
+  }
 }

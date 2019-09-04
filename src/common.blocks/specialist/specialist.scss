@@ -8,6 +8,10 @@
   border-radius: 50%;
 
   margin-bottom: 17px;
+
+  @include mq-under-880 {
+    width: 100px
+  }
 }
 
 .specialist__specialty {
@@ -15,6 +19,10 @@
   font-size: 16px;
   line-height: 30px;
   color: $black;
+
+  @include mq-under-880 {
+    font-size: 14px;
+  }
 }
 
 .specialist__name {
@@ -22,6 +30,12 @@
   line-height: 32px;
 
   margin: 10px 0;
+
+  @include mq-under-880 {
+    font-size: 16px;
+
+    margin: 0 0 13px;
+  }
 }
 
 .specialist__info {
@@ -29,4 +43,9 @@
   line-height: 28px;
   color: $black;
   white-space: pre-line;
+
+  @include mq-under-880 {
+    font-size: 12px;
+    line-height: 23px;
+  }
 }

@@ -4,7 +4,7 @@ mixin content(options)
         imgClass += options.right ? ' work__img_float_right' : ''
         var contentClass = 'work__content'
         contentClass += options.noMargin ? '' : ' work__content_margin-bottom_60'
-    section(class=contentClass)
+    li(class=contentClass)
         img(src=require(`./images/work/work${options.src}.png`) alt=`${options.head}` class=imgClass)
         h3.work__sub-head= options.head
         p.work__text= options.text

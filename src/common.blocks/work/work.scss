@@ -5,6 +5,19 @@
   box-shadow: 0 1px 4px 0 #EAEAEA;
 
   padding: 60px 240px;
+  position: relative;
+
+  @include mq-under-1440 {
+    padding: 60px 160px;
+  }
+
+  @include mq-under-1280 {
+    padding: 50px 80px;
+  }
+
+  @include mq-under-880 {
+    padding: 40px 20px 28px;
+  }
 }
 
 .work__head {
@@ -15,4 +28,38 @@
   text-align: center;
 
   margin-bottom: 60px;
+
+  @include mq-under-880 {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 28px;
+  }
+}
+
+.work__wrap {
+  @include mq-under-880 {
+    min-height: 335px;
+  }
+
+  @include mq-under-600 {
+    min-height: 465px;
+  }
+}
+
+.work__list {
+  position: static;
+
+  @include mq-under-880 {
+    width: calc(100% * 4);
+    position: absolute;
+  }
+}
+
+.work__navigation {
+  display: none;
+
+  @include mq-under-880 {
+    display: block;
+  }
 }

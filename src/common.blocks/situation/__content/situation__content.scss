@@ -19,6 +19,14 @@
 
   float: left;
   margin-right: 67px;
+
+  @include mq-under-880 {
+    height: 75px;
+    width: 81px;
+
+    float: none;
+    margin-right: 0;
+  }
 }
 
 .situation__sub-head {
@@ -28,6 +36,13 @@
   line-height: 32px;
 
   margin-bottom: 20px;
+
+  @include mq-under-880 {
+    font-size: 14px;
+    line-height: 24px;
+
+    margin: 29px 0 18px;
+  }
 }
 
 .situation__text {
@@ -35,4 +50,9 @@
   font-size: 15px;
   line-height: 31px;
   //white-space: pre-wrap;
+
+  @include mq-under-880 {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

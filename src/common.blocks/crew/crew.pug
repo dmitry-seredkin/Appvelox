@@ -3,28 +3,26 @@ include ../specialist/specialist
 
 -
     var items = '1; 2; 3; 4; 5'.split('; ')
-    var count = items.length
+    var elemPerPage = 1
+    var pages = Math.ceil(items.length / elemPerPage)
 
-section.crew(data-count=count)
+section.crew
     h2.crew__head Наши специалисты
 
-    .crew__slider
-        ul.crew__wrap
-            -for (let i = 0; i < count; i++)
-                li.crew__item
-                    +specialist({src: 1, specialty: 'Психотерапевт', name: `Елизавета Сергеевна${items[i]}`,
-                                 info: `Опыт работы: 25 лет
-                                        Окончил Ярославский медицинский университет.
-                                        Работал в поликлинике №2. Врачом стать мечтал, эта профессия нравится потому,
-                                        что она нужна людям. После работы много гуляю пешком и занимаюсь спортом –
-                                        врач должен быть в форме.`})
+    .js-slider
+        .crew__wrap.js-slider__wrap
+            ul.crew__list.js-slider__list(data-pages=pages)
+                each item in items
+                    li.crew__item
+                        +specialist({
+                            src: 1,
+                            specialty: 'Психотерапевт',
+                            name: `Елизавета Сергеевна${item}`,
+                            info: `Опыт работы: 25 лет
+                                   Окончил Ярославский медицинский университет.
+                                   Работал в поликлинике №2. Врачом стать мечтал, эта профессия нравится потому,
+                                   что она нужна людям. После работы много гуляю пешком и занимаюсь спортом –
+                                   врач должен быть в форме.`
+                        })
 
-    .crew__indicator
-        -for (let i = 0; i < count; i++)
-            -if (i === 0)
-                span.crew__circle.crew__circle_active
-            -else
-                span.crew__circle.crew__circle_margin-left_15
-
-    button.crew__button.crew__button_prev.crew__button_disabled
-    button.crew__button.crew__button_next
+        +sliderNavigation(pages)

@@ -5,12 +5,12 @@ include __content/situation__content
     var items = 'Кризис; Семья; Дети; Коммуникации; Мужчина и женщина; Развитие'.split('; ')
     var count = items.length;
 
-section.situation
+section.situation.js-situation
     h2.situation__head В каких ситуациях можно обратиться к нам
 
 
     nav.situation__nav
-        ul
+        ul.situation__wrap(style="left: 53px")
             -for (let i = 0; i < count; i++)
                 -if (i === 0)
                     li.situation__item.situation__item_active(data-index=`${i}`)= items[i]

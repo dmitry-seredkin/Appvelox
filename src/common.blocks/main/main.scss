@@ -9,4 +9,8 @@
 .main {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.23px;
+
+  @include mq-under-880 {
+    font-family: "Proxima Nova", sans-serif;
+  };
 }
